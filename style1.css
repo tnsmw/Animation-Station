@@ -28,8 +28,8 @@ main: hover {
 
 h1, h2, h3 {
   font-family: 'Big Shoulders Stencil Text', cursive;
-  margin-top: 15%;
-  margin-left: 15%;
+  margin-top: 12%;
+  margin-right: 2%;
   padding: 0;
 }
 
@@ -38,12 +38,17 @@ h1 {
   grid-column: 6 / 10;
   grid-row: 1 / 2;
   text-align: right;
+  animation: headShake;
+  animation-duration: .5s;
 }
 
 h2 {
+  color: #000;
   font-size: 1.5rem;
   grid-column: 3 / 8;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
+  animation: fadeOut;
+  animation-duration: 5s;
 }
 
 .triangle1 {
@@ -58,8 +63,8 @@ h2 {
 .triangle2 {
   width: 0;
   height: 0;
-  border-left: 6rem solid #838383;
-  border-top: 4rem solid transparent;
-  border-bottom: 4rem solid transparent;
+  border-bottom: 6rem solid #838383;
+  border-left: 4rem solid transparent;
+  border-right: 4rem solid transparent;
   grid-area: 4 / 8 / 5 / 9;
 }

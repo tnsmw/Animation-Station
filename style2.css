@@ -26,57 +26,36 @@ main: hover {
 }
 
 
-h1, h2, h3 {
+h1, h2 {
   font-family: 'Big Shoulders Stencil Text', cursive;
-  margin-top: 15%;
-  margin-left: 15%;
-  padding: 0;
+  margin-top: 12%;
+  margin-left: 2%;
+  font-size: 5rem;
+  line-height: 4rem;
+  grid-column: 1 / 9;
+  grid-row: 1 / 6;
 }
 
-h1 {
-  font-size: 1.75rem;
-  font-family: 'Nothing You Could Do', cursive;
-  grid-column: 1 / 6;
-  grid-row: 1 / 2;
-}
-
-h2 {
-  font-size: 1.5rem;
-  grid-column: 3 / 8;
-  grid-row: 2 / 3;
-}
-
-h3 {
-  font-size: 3rem;
-  line-height: 1.75rem;
-  grid-column: 8 / 10;
-  grid-row: 1/ 6;
-  writing-mode: vertical-rl;
-}
+  
 
 .triangle1 {
   width: 0;
   height: 0;
-  border-bottom: 27rem solid #d7d7d7;
-  border-left: 18rem solid transparent;
-  border-right: 18rem solid transparent;
-  grid-area: 2 / 1 / 6 / 6;
+  border-bottom: 40rem solid #d7d7d7;
+  border-left: 12rem solid transparent;
+  border-right: 12rem solid transparent;
+  grid-area: 3 / 8 / 7 / 11;
+  animation: jello;
+  animation-duration: 0.5s;
 }
 
 .triangle2 {
   width: 0;
   height: 0;
-  border-top: 45rem solid #838383;
-  border-right: 15rem solid transparent;
-  border-left: 15rem solid transparent;
-  grid-area: 1 / 7 / 5 / 9;
-}
-
-.triangle3 {
-  width: 0;
-  height: 0;
   border-top: 5rem solid #464646;
   border-right: 4rem solid transparent;
   border-left: 4rem solid transparent;
-  grid-area: 4 / 6 / 5 / 7;
+  grid-area: 1 / 9 / 2 / 10;
+  animation: jello;
+  animation-duration: 0.5s;
 }
