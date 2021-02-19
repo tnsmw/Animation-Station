@@ -1,0 +1,65 @@
+
+
+html {
+  font-size: 1rem;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  background: #000110;
+}
+
+body {
+  padding: 0;
+  color: #fff;
+}
+
+main {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(5, 20%);
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%
+}
+
+main: hover {
+  text-decoration-style: none;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  margin-top: 15%;
+  margin-left: 15%;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  grid-column: 6 / 10;
+  grid-row: 1 / 2;
+  text-align: right;
+}
+
+h2 {
+  font-size: 1.5rem;
+  grid-column: 3 / 8;
+  grid-row: 2 / 3;
+}
+
+.triangle1 {
+  width: 0;
+  height: 0;
+  border-bottom: 24rem solid transparent;
+  border-left: 70rem solid #d7d7d7;
+  border-top: 24rem solid transparent;
+  grid-area: 1 / 1 / 6 / 8;
+}
+
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 6rem solid #838383;
+  border-top: 4rem solid transparent;
+  border-bottom: 4rem solid transparent;
+  grid-area: 4 / 8 / 5 / 9;
+}
